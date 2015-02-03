@@ -6,9 +6,13 @@ module.exports = function(grunt) {
         forceExit: true,
       },
       all: ['spec/']
+    },
+    jshint: {
+      src: ['js/']
     }
   });
 
   grunt.loadNpmTasks('grunt-jasmine-node');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.registerTask('default', ['jasmine_node']);
 };

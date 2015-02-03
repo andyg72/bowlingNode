@@ -1,6 +1,6 @@
 function Frame() {
   this.score = 0;
-};
+}
 
 Frame.prototype.frameScore = function() {
   return this.score;
